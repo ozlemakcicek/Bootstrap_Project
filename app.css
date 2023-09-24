@@ -1,9 +1,14 @@
 :root{
-    --blue:#1d7ad7;
+    --blue:#042f5a;
     --red:#e84356;
 }
 
 /* ! Navbar */
+
+
+.container-fluid{
+    background-color: white;
+}
 
 .nav-link{
     font-size: 1.2rem;
@@ -20,6 +25,7 @@
 .bg-body-tertiary .navbar-nav .nav-link:hover{
     color: red;
 }
+
 
 /* ! Carousel */
 /* style ile verilen background-image icin... */
@@ -49,6 +55,12 @@
         
                     max-height: 450px;
                 }
+                                 .carousel-item img {
+                                     height: 50vh;
+                                     margin-top: 5rem;
+                                 }
+
+
 }
 
 @media screen and (max-width:1178px){
@@ -73,6 +85,10 @@
     
             max-height: 260px;
         }
+                 .carousel-item img {
+                     height: 70vh;
+                     margin-top: 5rem;
+                 }
 }
 @media screen and (max-width:758px){
     .res_card {
@@ -80,18 +96,35 @@
             height: 483px;
         }
     
-        /* .card-img-top {
-    
-            max-height: 250px;
-        } */
+           .carousel-item img {
+               height: 70vh;
+               margin-top: 5rem;
+           }
 
 }
 
+@media screen and (max-width:570px){
+      
+                    .card{
+                       
+                      width: 400px;
+                      margin-left: 1rem;
+                    }
+                   
 
+                    .card-img-top{
+                        width: 90%;
+                        margin: 1rem;
+                    }
+                 .carousel-item img{
+                    height: 70vh;
+                    margin-top: 5rem;
+                 }
+.tab-content{
+    margin-top: 1rem;
+}
 
-
-
-
+                }
 
 
 
@@ -149,4 +182,24 @@ section #about .card {
 .nav-pills .nav-link{
     color: white;
     /* font-size: 0.7rem; */
+}
+
+.img-thumbnail{
+  
+   height: 40vh;
+}
+
+footer i{
+    color: white;
+    margin: 1rem;
+}
+
+#forms i{
+    color:var(--red);
+}
+
+#forms a{
+    color: black;
+    margin: 1rem;
+    text-decoration: none;
 }
